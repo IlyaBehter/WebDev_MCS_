@@ -1,0 +1,11 @@
+.header { color : red; height: 50px;}
+.sectionText { color: red; }
+header {background: black;}
+li {color: red;}
+#Биография { background: black; }
+a {color: black;}
+#Аквариум { background: black; }
+#Попмеханика { background: black; }
+h2 { background: black; }
+.image { height: 420px; background-image: url(../img/pattern.png)}
+

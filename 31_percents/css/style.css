@@ -1,0 +1,25 @@
+@import url(reset.css);
+
+.outer {
+height: 500px;
+width: 70%;
+background-color: navy;
+margin: auto;
+}
+.inner {
+	height: 200px;
+	width: 70%;
+	background-color: pink;
+	margin: auto;
+}
+.popup {
+	position: fixed;
+	height: 200px;
+	width: 500px;
+	background-color: black;
+	border-radius: 5%;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+}

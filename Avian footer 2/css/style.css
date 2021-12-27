@@ -1,0 +1,35 @@
+@import url(reset.css);
+body {
+	background-color: pink;
+}
+
+header	{
+z-index: 1;
+height: 140px;
+background-color: white;
+border:solid 1px white;
+display: flex;
+justify-content:space-between;
+align-items:stretch;
+flex-direction:row;
+flex-wrap:nowrap;}
+
+nav {
+font-family: Arial;
+font-size: 50px;
+line-height: 57px;
+margin:  40px;
+height: 40px;
+}
+
+a {
+	text-decoration: none;
+	margin:  20px;
+	flex-wrap:nowrap;
+	color: #E50043;}
+
+.evian {
+font-family: Arial;
+font-size: 70px;
+margin:  30px;
+color: #E50043;}

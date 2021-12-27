@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,700;1,300&display=swap');
+
+.heading h1 {
+	background-attachment: size;
+	font-size: 100px;
+
+	font-weight: bold;
+	font-style: italic;
+	font-family: 'Lobster', cursive;
+	text-shadow: 3px 3px 10px black;
+	text-align: center;
+	color: #ff6666
+
+} 
+.paragraph p{ 
+	font-family: 'Play', sans-serif;
+	text-align: center;
+	width: 700px;
+	
+
+}
+
+.paragraphtwo p{
+
+}

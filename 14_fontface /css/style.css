@@ -1,0 +1,23 @@
+
+.heading 
+h1 {
+	font-size: 100px;
+
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 3px 3px 10px black;
+	text-align: center;
+	color: #ff6666
+
+} 
+.paragraph p{ 
+	text-align: center;
+	width: 700px;
+	
+
+}
+
+.paragraphtwo p{width: 700px;
+
+
+}

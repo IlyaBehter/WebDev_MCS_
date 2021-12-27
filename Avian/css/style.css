@@ -1,0 +1,212 @@
+@import url(reset.css);
+
+
+body {
+	background-color: white;
+}
+
+
+header	{
+/*display: block;
+z-index: 1;
+height: 140px;
+background-color: white;
+border:solid 1px white;
+align-items:stretch;
+flex-wrap:nowrap;
+justify-content: space-between;*/
+position: fixed;
+ width: 100%;
+ min-height: 150px;
+ display: flex;
+ align-items:center;
+ justify-content: space-between;
+ background-color: white;
+ flex-wrap:nowrap;
+ align-items:stretch;
+ z-index: 1;
+}
+
+nav {
+
+font-family: Arial;
+font-size: 50px;
+line-height: 57px;
+margin:  40px;
+height: 40px;
+}
+
+a {
+	text-decoration: none;
+	margin:  20px;
+	flex-wrap:nowrap;
+	color: #E50043;}
+
+.evian {
+font-family: Arial;
+font-size: 70px;
+margin:  30px;
+color: #E50043;}
+
+
+.firstblock {
+position: relative;
+z-index: 0;
+height: 950px;
+top: 140px;
+background-image: url(../img/evian_origins_logo.png)
+}
+.glass {
+position: absolute;
+height: 950px;
+left:170px;
+
+font-family: Arial;
+font-size: 100px;
+line-height: 115px;
+color: #E50043;
+}
+.secondblock {
+	display: flex;
+}
+.text1 {
+position: relative;
+margin: 300px 200px 150px 200px;
+
+border: 3px solid #F8BFC7;
+box-sizing: border-box;
+border-radius: 20px;
+align-items: stretch;
+}
+.Hone {
+		font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+margin: 20px;
+
+}
+.firstp {
+	font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+margin: 20px;
+}
+.thirdblock {
+	display: flex;}
+
+
+.bottles {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	margin: auto;
+
+	}
+
+.btl {
+	width: 281px;
+	height: 863px;
+	padding: 50px}
+
+.btl:hover { 
+	transition: 1s;
+	transform: scale(1.2, 1.2);}
+
+
+
+
+.bottlname1 {
+	top:2650px;
+	width: 100%;
+	position: absolute;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 29px;
+	display: flex;
+	text-align: center;
+	
+}
+.bottle1 {
+
+	height: 40px;
+	width: 250px;
+	margin: 0 0 0 140px;}
+
+.bottle2 {
+	height: 40px;
+	width: 250px;}
+
+.bottle3 {
+	height: 40px;
+	width: 250px;
+	margin: 0 140px 0 0;}
+
+.forthblock {
+	display: flex;
+}
+.text2 {
+position: relative;
+width: 100%;
+border: 3px solid #F8BFC7;
+box-sizing: border-box;
+border-radius: 20px;
+align-items: center;
+margin: 200px 200px 200px 200px;
+}
+
+
+.btl4 {
+	margin: 20px 50px 20px 50px;
+	float:left;
+}
+p {
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+margin: 30px;}
+
+.footer {
+	width: 1440px;
+	height: 140px;
+	left: 0px;
+
+
+	background: #F8BFC7;
+
+	padding: 10px;
+}
+.Copyright {
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 57px;
+display: flex;
+align-items: center;
+
+
+color: #FFFFFF;}
+
+

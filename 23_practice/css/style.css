@@ -1,0 +1,82 @@
+@import url(reset.css);
+
+.heading { height: 30px;
+font-size: 27px;
+background-color: red;
+color: white; 
+font-family: 'GrtskTera-Semibold', sans-serif;
+padding: 15px 15px 15px 30px;}
+
+.first {
+	
+	display: inline-block;
+	position: relative;
+	height: 800px;
+	width: 350px;
+	border: solid 3px yellow; 
+	vertical-align: top;
+	box-sizing: border-box;
+	border-radius: 20px;
+	padding: 30px;
+	margin: 30px 15px 15px 30px;
+	font-family: sans-serif;
+}
+
+.second {
+	
+	display: inline-block;
+	position: relative;
+	height: 800px;
+	width: 350px;
+	border: solid 3px yellow;
+	vertical-align: top;
+	box-sizing: border-box; 
+	border-radius: 20px;
+	padding: 30px;
+	margin: 30px 15px 15px 15px;
+	font-family: sans-serif;
+}
+
+.third {
+	
+	display: inline-block;
+	position: relative;
+	height: 800px; 
+	width: 350px;
+	border: solid 3px yellow; 
+	vertical-align: top;
+	box-sizing: border-box;
+	border-radius: 20px;
+	padding: 30px;
+	margin: 30px 15px 30px 15px;
+	font-family: sans-serif;
+}
+.heading1 {
+	font-size: 23px;
+	font-family: sans-serif;
+	padding: 0px 0px 20px 0px;
+	font-family: 'GrtskTera-Semibold', sans-serif;
+
+}
+
+.heading2 {
+	font-size: 23px;
+	font-family: sans-serif;
+	padding: 0px 0px 20px 0px;
+	font-family: 'GrtskTera-Semibold', sans-serif;
+}
+
+.heading3 {
+	font-size: 23px;
+	font-family: sans-serif;
+	padding: 0px 0px 20px 0px;
+	font-family: 'GrtskTera-Semibold', sans-serif;
+}
+footer {  
+height: 25px;
+font-size: 23px;
+background-color: red;
+color: white; 
+font-family: sans-serif;
+padding: 10px;
+}

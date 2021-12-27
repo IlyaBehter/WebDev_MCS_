@@ -1,0 +1,13 @@
+@import url(reset.css);
+
+.flex-container {
+	height: 300px;
+	background-color: #aaaaee; 
+	display: flex;
+}
+.flex-item {
+	height: 100px;
+	width: 100px;
+	background-color: #eeaaee;
+	margin:auto;
+}

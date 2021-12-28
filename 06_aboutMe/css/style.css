@@ -26,7 +26,7 @@ img { box-sizing: border-box;
 .box {height: 100px;
 	text-decoration: none;
 	box-sizing: border-box;
-	border: 10px solid yellow;
+	border: 10px solid yellow; 
 	background-color: pink;}
 .nav {
 	font-family: 'ArnoldTestv03', sans-serif;

@@ -1,0 +1,389 @@
+@import url(reset.css);
+
+html {
+	background-color: black;
+}
+/*header {
+	height: 120px;
+	width: 100%;
+	color: white;
+	position: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+nav	{
+	margin: 40px;
+
+}
+.main-menu_item {
+
+	font-family: 'helvetica', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	display: inline-block;
+	justify-content: center;
+	padding: 10px;
+}
+
+.meduzalogo {
+	position: absolute;
+	left: 40px;
+	top: 30px;
+}
+.engru {
+	place-self: center end;
+}*/
+
+header {
+	font-size: 15px;
+	color: white;
+	display: grid;
+	margin: 0.5rem;
+	grid-template-columns: 2fr 6fr 4fr;
+	grid-template-rows: 5rem;
+	grid-gap: 1rem;
+	grid-template-areas:
+	"logo menu menu lang"
+	"money money money money";
+}
+.mobmenu {
+	display: none;
+}
+
+.logo {
+	grid-area: logo;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation {
+	font-size: 15px;
+	display: flex;
+	grid-area: menu;
+	align-items: center;
+	justify-content: center;
+}
+
+.engru {
+	grid-area: lang;
+	display: flex;
+	align-items: center;
+	place-self: center end;
+	font-family: 'helvetica', sans-serif;
+	font-weight: bold;
+	padding: 20px;
+}
+.eng {padding: 0 10px;
+	display: inline-block;
+	border-right: 2px solid white;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.search {padding: 0 10px;}
+
+.main-menu_item {
+	font-family: 'helvetica', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	display: inline-block;
+	justify-content: center;
+	padding: 10px;
+}
+.money {
+	height: 2.5rem;
+	grid-area: money;
+	background-color: white;
+	border-radius: 0.4rem;
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	margin: 0 50px;
+ 	justify-content: space-between;
+}
+.exchange {
+	color: black;
+
+}
+
+.dollar {display: inline-block;
+margin: 0 5px 0 0;}
+.euro {display: inline-block;
+margin: 0 5px 0 0;}
+
+h1 {display: inline-block;
+font-family: 'helvetica', sans-serif;
+font-weight: bold;
+color: #9CA1A9;
+margin: 0 5px 0 0;}
+
+.currency {display: inline-block;
+font-family: 'helvetica', sans-serif;
+font-weight: bold;
+color: black;}
+
+.switch-btn {
+  display: inline-block;
+  width: 48px; /* ширина */
+  height: 26px; /* высота */
+  border-radius: 25px; /* радиус скругления */
+  background: #E6E6E6; /* цвет фона */
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms; /* анимация */
+}
+.switch-btn::after {
+  content: "";
+  height: 20px; /* высота кнопки */
+  width: 20px; /* ширина кнопки */
+  border-radius: 25px;
+  background: #fff; /* цвет кнопки */
+  top: 3px; /* положение кнопки по вертикали относительно основы */
+  left: 3px; /* положение кнопки по горизонтали относительно основы */
+  transition-duration: 300ms; /* анимация */
+  position: absolute;
+  z-index: 1;
+}
+.switch-on {
+  background: #E6E6E6;
+}
+h2 {
+display: inline-block;
+font-family: 'helvetica', sans-serif;
+font-weight: bold;
+color: #9CA1A9;
+padding: 0 16px;
+}
+.order {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+ text-align: right}
+
+.content {
+	background-color: white;
+	border-radius: 0.4rem;
+	padding: 60px;
+	margin: 0 58px;
+	background: #F2F2F2
+}
+
+.post1 {
+	background: #FFFFFF;
+	border: 5px solid #A37846;
+	border-radius: 0.4rem;
+}
+
+h3 {
+	font-family: PF Regal Text Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 45px;
+	line-height: 50px;
+	text-align: center;
+	margin: 66px 45px;}
+
+.time1 {
+	font-family: helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+
+	text-align: center;
+
+	color: #9CA1A9;
+	padding: 20px;}
+
+
+.post2 {
+	padding: 15px;
+	background: #FFFFFF;
+	border: 1px solid #9CA1A9;
+	border-radius: 10px;
+	margin:  17px 0;
+
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+	grid-template-areas:
+	"a b c "
+	"a d f";
+}
+
+.n1 {grid-area: a;
+	font-family: PFRegalTextPro-RegularA;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.n2 {grid-area: b;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.n3 {grid-area: c;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+.n4 {grid-area: d;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+.n5 {grid-area: f;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+h5 {
+ margin: 0 0 30px 0;
+}
+
+.time2 {
+	font-family: helvetica;
+	font-style: normal;
+	font-size: 10px;
+	line-height: 18px;
+	color: #9CA1A9;	
+}
+.footer-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.footer-group {
+	margin: 20px;
+}
+
+.footer-title {
+  font-family: Proxima Nova,Arial,Helvetica Neue,sans-serif;
+  letter-spacing: 1px;
+	font-size: 15px;
+
+	text-transform: uppercase;
+
+	color: grey;}
+
+.linkroot {
+	text-decoration: none;
+	color: white;
+	font-family: Proxima Nova,Arial,Helvetica Neue,sans-serif;
+	font-weight: Light;
+	font-size: 14px;
+
+	line-height: 16px;
+	padding:  5px 0;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+.footer-nav {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 100px;
+}
+.footer-title {
+	display: flex;
+}
+
+.linkroot {
+	display: flex;
+	flex-direction: column;
+}
+
+.block2 {
+	padding: 20px 0 0 0;
+}
+
+@media all and (max-width: 992px) {
+	.post2 {
+		padding: 0;
+	background: #FFFFFF;
+	border: 1px solid #9CA1A9;
+	border-radius: 10px;
+	margin:  17px 0;
+
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+	grid-template-areas:
+	"a"
+	"b"
+	"c"
+	"d"
+	"f";}
+	.n1 {grid-area: a;
+	font-family: Proxima Nova,Arial,Helvetica Neue,sans-serif;
+	font-weight: bold;
+	font-size: 20px;}
+
+	.n1, .n2, .n3, .n4  {
+	border-bottom: solid 1px grey ;
+	font-size: 20px;
+	padding: 10px;
+	}   
+.n5 {	font-size: 20px;
+	padding: 10px;}
+	.content {
+		padding:  10px;
+	}
+	.post1 {
+		border: 2px solid #A37846;
+	}
+
+.navigation {
+	 display: none;
+}
+.eng { display: none;}
+.money {display: none;}
+.mobmenu {display: flex;
+height: 20px;
+width: 28px;
+margin: 0 20px}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.meduzalogo {
+	height: 26px
+}
+.footer-nav{
+	display: block;
+	flex-wrap: wrap;
+   margin: 100px;
+   text-align: center;
+}
+.footer-title {
+	display: inline-block;
+	text-align: center;
+}
+
+/*vertical-alighn: top; - выравниват див по вертикали /*
+
+
+
+
+

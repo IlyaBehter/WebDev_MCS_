@@ -1,0 +1,163 @@
+@import url(reset.css);
+
+header {
+	height:90px;
+	width: 100%;
+	background-color: #FF8585;
+	background-image: url(../img/icon1.png);
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	color: white;
+}
+nav {
+	padding: 30px 20px 20px 120px;
+	text-align: right;
+}
+
+a {
+	font-family: 'ArnoldTestv03';
+	font-size: 28px;
+	text-decoration: none;
+	color: white;
+	padding: 0px 10px;
+}
+
+.page { 
+ 	background-image: url(../img/L1.png);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-image: cover;
+	display: flex;}
+
+form {
+	height: 30%;
+	box-sizing: border-box;
+	background-color: black;
+	padding: 40px 30px ;
+	margin: 60px;
+	background: rgba(14, 40, 78, 0.8);
+	border: 3px solid #F95862;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+
+.right {
+	width: calc(100% - 480px);
+}
+input, select { 
+	width: 100%;
+	height: 30px;
+	padding: 3px;
+	border-top: rgba(14, 40, 78, 0.0);
+	border-left: rgba(14, 40, 78, 0.0);
+	border-right: rgba(14, 40, 78, 0.0);
+	border-bottom: 1px solid white;
+	
+	background-color: rgba(14, 40, 78, 0.0); 
+
+}
+
+ span {
+		font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 23px;
+	display: flex;
+ 
+
+	color: #F95862;
+	line-height: 2rem;
+	font-size: 22px;
+}
+
+label {
+
+	display:block;
+	padding: 8px;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: #F95862;
+
+}
+input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+input[type="radio"], input[type="checkbox"] {
+	display: inline-block;
+	width: 20px;
+	vertical-align: middle;
+}
+input[type="submit"] {
+	border: none;
+	margin: 50px 20px 20px 20px;
+	background: #294C3A;
+	border-radius: 30px;
+	width: 300px;
+
+
+	font-family: CSTM XPRMNTL 01;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 23px;
+
+
+	color: white;
+	height: 50px;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: white;
+	color: black;
+}
+.onway {
+width: 100%;
+height: 90px;
+
+display: flex;
+align-items: center;
+text-align: center;
+background-color: #2B4770;
+display: flex;
+justify-content: center;
+}
+
+
+
+.email1 {
+font-family: baron;
+font-size: 60px;
+color:  #DAD6C0;
+align-content: center;
+}
+
+a[href="#"]:hover {
+	color: navy;	
+}
+
+.footer {
+	width: 100%;
+	height: 90px;
+	background: #294C3A;
+}
+
+.footer-container {
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+	padding: 35px;
+
+
+
+
+}
+
+
+
+
+

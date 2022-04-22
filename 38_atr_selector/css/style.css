@@ -1,0 +1,8 @@
+@import url(reset.css);
+
+img[src="https://i.pinimg.com/564x/c6/7b/71/c67b71a0ebd3634f8bde12c2e4841c0b.jpg"] {
+	width: 500px;
+}
+img[alt="stambul"] {
+	width: 500px;
+}

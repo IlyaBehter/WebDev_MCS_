@@ -44,7 +44,7 @@ h1 {
 	min-height: 600px;
 	display: flex;
 	justify-content: space-between;
-	align-items: stretch;
+	align-items: flex-start;
 	flex-wrap: wrap;
 }
 

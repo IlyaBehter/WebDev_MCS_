@@ -19,9 +19,10 @@
 	</header>
 	<main class="page">
 		<div class="right"></div>
-		<form>
-			<div class="columnone">
-						<fieldset class="personal">
+					<form
+			  action="https://formspree.io/f/xdobpqgw"
+			  method="POST">
+			<fieldset class="personal">
 							<label for="fio">ИМЯ</label>
 							<input type="text" name="name" placeholder=" NAME">
 
@@ -36,13 +37,16 @@
 						<select name="City">
 							<option value="Poster">Постер</option>
 							<option value="Пряник">Пряник</option>
-							
-						</select>
-						<label for="email">E-MAIL</label>
-							<input type="email" name="email" placeholder="yo@example.com">
-				</div>
-				<input type="submit">
-				</form>
+							</select>
+			  <label class="text2">
+			    Your email:
+			    <input type="email" name="email">
+			  </label>
+
+			  <button type="submit">ОТПРАВИТЬ</button>
+
+		</form>
+		
 		</div>
 	</main>
 

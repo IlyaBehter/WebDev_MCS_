@@ -1,0 +1,46 @@
+
+header {
+    h1 { font-size: 20px;
+    color: red;
+ }
+    h2 { font-size: 20px;
+        color: rgb(30, 255, 0);
+
+    }
+    h3 {
+        ont-size: 20px;
+        color: rgb(51, 0, 255);
+    }
+    > {
+        time {
+            color: blueviolet
+        }
+    }
+}
+
+.blogpost {
+    padding: 2rem;
+    &_header {
+        font-size: 30px;
+        color: aqua;
+    }
+}
+a {
+    &:hover {
+        color: rgb(229, 255, 0)
+
+    }
+    &:link {
+       text-decoration: none;
+        
+    }
+    &:active {
+        color:aquamarine;
+    }
+
+
+    &:visit {
+        color:pink;
+        
+    }
+}

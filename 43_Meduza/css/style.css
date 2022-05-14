@@ -71,10 +71,9 @@ header {
 	grid-area: lang;
 	display: flex;
 	align-items: center;
-	place-self: center end;
 	font-family: 'helvetica', sans-serif;
 	font-weight: bold;
-	padding: 20px;
+
 }
 .eng {padding: 0 10px;
 	display: inline-block;
@@ -254,6 +253,9 @@ h3 {
 	flex-direction: column;
 	justify-content: space-between;
 	}
+h4 {
+ margin: 0 0 30px 0;
+}
 
 h5 {
  margin: 0 0 30px 0;
@@ -334,10 +336,9 @@ h5 {
 	"c"
 	"d"
 	"f";}
+
 	.n1 {grid-area: a;
-	font-family: Proxima Nova,Arial,Helvetica Neue,sans-serif;
-	font-weight: bold;
-	font-size: 20px;}
+		padding: 0 0 10px;}
 
 	.n1, .n2, .n3, .n4  {
 	border-bottom: solid 1px grey ;
@@ -346,6 +347,7 @@ h5 {
 	}   
 .n5 {	font-size: 20px;
 	padding: 10px;}
+
 	.content {
 		padding:  10px;
 	}
@@ -357,19 +359,30 @@ h5 {
 	 display: none;
 }
 .eng { display: none;}
-.money {display: none;}
-.mobmenu {display: flex;
-height: 20px;
-width: 28px;
-margin: 0 20px}
+
+.mobmenu {
+	grid-area: mob;
+    display: flex;
+    align-items: center;
+    place-self: center end;
+    height: 30px;}
+
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	font-size: 15px;
+	color: white;
+	display: grid;
+	margin: 0.5rem;
+	grid-template-columns: 1fr 6fr 3fr;
+	grid-template-rows: 3rem;
+	grid-gap: 1rem;
+	grid-template-areas:
+	"lang logo logo mob"
+	"money money money money";
 }
 .meduzalogo {
-	height: 26px
+	height: 20px
 }
+
 .footer-nav{
 	display: block;
 	flex-wrap: wrap;
@@ -380,6 +393,30 @@ header {
 	display: inline-block;
 	text-align: center;
 }
+.h2 { font-size: 7px;
+
+}
+@media all and (max-width: 450px) {
+	.content {
+		margin: 0px;
+	}
+	.money {
+	margin: 0;
+	padding: 5px;
+}
+
+	.engru {
+	padding: 20px 5px;
+}
+	.mobmenu {
+	margin: 0 10px;
+	}
+	h3 {
+		font-size: 35px;
+		line-height: 40px;
+	}
+}
+
 
 /*vertical-alighn: top; - выравниват див по вертикали /*
 

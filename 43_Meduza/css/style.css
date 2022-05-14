@@ -40,7 +40,7 @@ header {
 	font-size: 15px;
 	color: white;
 	display: grid;
-	margin: 0.5rem;
+	padding: 0.5rem;
 	grid-template-columns: 2fr 6fr 4fr;
 	grid-template-rows: 5rem;
 	grid-gap: 1rem;
@@ -337,6 +337,12 @@ h5 {
 	"d"
 	"f";}
 
+	main {
+	
+		padding: 0.5rem;
+	
+	}
+
 	.n1 {grid-area: a;
 		padding: 0 0 10px;}
 
@@ -345,12 +351,17 @@ h5 {
 	font-size: 20px;
 	padding: 10px;
 	}   
+
+
 .n5 {	font-size: 20px;
 	padding: 10px;}
+
+
 
 	.content {
 		padding:  10px;
 	}
+
 	.post1 {
 		border: 2px solid #A37846;
 	}
@@ -371,7 +382,7 @@ header {
 	font-size: 15px;
 	color: white;
 	display: grid;
-	margin: 0.5rem;
+	padding: 0.5rem;
 	grid-template-columns: 1fr 6fr 3fr;
 	grid-template-rows: 3rem;
 	grid-gap: 1rem;
@@ -394,8 +405,11 @@ header {
 	text-align: center;
 }
 .h2 { font-size: 7px;
-
 }
+.money {
+	margin: 0 58px;
+}
+
 @media all and (max-width: 450px) {
 	.content {
 		margin: 0px;

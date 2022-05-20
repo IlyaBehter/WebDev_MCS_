@@ -132,7 +132,7 @@ color: black;}
   height: 26px; /* высота */
   border-radius: 25px; /* радиус скругления */
   background: #E6E6E6; /* цвет фона */
-  z-index: 0;
+
   margin: 0;
   padding: 0;
   border: none;
@@ -150,7 +150,6 @@ color: black;}
   left: 3px; /* положение кнопки по горизонтали относительно основы */
   transition-duration: 300ms; /* анимация */
   position: absolute;
-  z-index: 1;
 }
 .switch-on {
   background: #E6E6E6;
@@ -390,6 +389,122 @@ header {
 	"lang logo logo mob"
 	"money money money money";
 }
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+
+  font-family: 'Helvetica Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: uppercase;
+
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  background-color: black;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+
+	font-family: 'Helvetica Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: uppercase;
+
+	color: #F1F1F1;
+	font-size: 15px;
+	color:  white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.logomob {
+	top: 20px;
+	margin: 30px;
+}
+
+.line {
+		border-bottom: solid 0.5px white ;
+}
+.logomedmob {height: 27px;
+}
+.menu {
+	margin: 20px ;
+}
+
+.menu__item:hover {
+ color: #DBAD7A;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+
 .meduzalogo {
 	height: 20px
 }

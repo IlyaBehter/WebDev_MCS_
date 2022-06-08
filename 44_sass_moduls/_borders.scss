@@ -1,0 +1,6 @@
+$color:rgb(187, 204, 28) !default; // дефолт указываем когда хотим иметь возможность поменять значение 
+$width: 1px !default;
+
+@mixin border {
+    border: 1px solid $color;
+}

@@ -1,0 +1,43 @@
+@mixin paddings($nulify_x: false) {
+    padding-left: 0;
+    padding-right: 0;
+    @if $nulify_x {
+        padding-top: 0;
+        padding-bottom: 0;
+    } @else {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+body {
+ @include paddings($nulify_x: false)
+}
+
+@mixin children() {
+    @for $i from 1 through 10 {
+        &:nth-child(2n + #{$i}) {
+            background-color: grey;
+        }
+    }
+}
+ul {
+    @include children();
+}
+
+// применяет правила для большого количества переменных СРАЗУ
+
+$width: 20px 50px 100px 150px;
+
+@each $width in $width {
+    .element-#{$width} {
+        min-width: $width;
+    }
+}
+
+$messages: ("info": blue, "alert": red);
+
+@each $type, $color in $messages {
+    .message-#{$type} {
+        background-color: $color;
+    }
+}

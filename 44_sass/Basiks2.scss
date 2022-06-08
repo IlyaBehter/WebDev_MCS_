@@ -1,0 +1,9 @@
+@use 'framework';
+
+body {
+     color: framework.$color;
+}
+
+footer {
+    @include s.border();
+}

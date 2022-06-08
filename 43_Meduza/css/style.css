@@ -3,38 +3,6 @@
 html {
 	background-color: black;
 }
-/*header {
-	height: 120px;
-	width: 100%;
-	color: white;
-	position: fixed;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-
-}
-nav	{
-	margin: 40px;
-
-}
-.main-menu_item {
-
-	font-family: 'helvetica', sans-serif;
-	font-weight: bold;
-	font-size: 15px;
-	display: inline-block;
-	justify-content: center;
-	padding: 10px;
-}
-
-.meduzalogo {
-	position: absolute;
-	left: 40px;
-	top: 30px;
-}
-.engru {
-	place-self: center end;
-}*/
 
 header {
 	font-size: 15px;
@@ -51,6 +19,58 @@ header {
 .mobmenu {
 	display: none;
 }
+
+/*КНОПКА*/
+.switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 45px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 3px;
+  content: "";
+  height: 20px;
+  left: 3px;
+  position: absolute;
+  transition: .4s;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
 
 .logo {
 	grid-area: logo;
@@ -126,34 +146,11 @@ font-family: 'helvetica', sans-serif;
 font-weight: bold;
 color: black;}
 
-.switch-btn {
-  display: inline-block;
-  width: 48px; /* ширина */
-  height: 26px; /* высота */
-  border-radius: 25px; /* радиус скругления */
-  background: #E6E6E6; /* цвет фона */
 
-  margin: 0;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  transition-duration: 300ms; /* анимация */
-}
-.switch-btn::after {
-  content: "";
-  height: 20px; /* высота кнопки */
-  width: 20px; /* ширина кнопки */
-  border-radius: 25px;
-  background: #fff; /* цвет кнопки */
-  top: 3px; /* положение кнопки по вертикали относительно основы */
-  left: 3px; /* положение кнопки по горизонтали относительно основы */
-  transition-duration: 300ms; /* анимация */
-  position: absolute;
-}
-.switch-on {
-  background: #E6E6E6;
-}
+
+
+
+
 h2 {
 display: inline-block;
 font-family: 'helvetica', sans-serif;
@@ -403,7 +400,7 @@ header {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 /* добавляем "гамбургер" */
 .menu__btn > span,
@@ -426,6 +423,7 @@ header {
 
 /* контейнер меню */
 .menu__box {
+	z-index: 1;
   display: block;
   position: fixed;
   visibility: hidden;

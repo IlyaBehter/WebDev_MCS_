@@ -1,0 +1,61 @@
+body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+ul:nth-child(2n+1) {
+  background-color: grey;
+}
+ul:nth-child(2n+2) {
+  background-color: grey;
+}
+ul:nth-child(2n+3) {
+  background-color: grey;
+}
+ul:nth-child(2n+4) {
+  background-color: grey;
+}
+ul:nth-child(2n+5) {
+  background-color: grey;
+}
+ul:nth-child(2n+6) {
+  background-color: grey;
+}
+ul:nth-child(2n+7) {
+  background-color: grey;
+}
+ul:nth-child(2n+8) {
+  background-color: grey;
+}
+ul:nth-child(2n+9) {
+  background-color: grey;
+}
+ul:nth-child(2n+10) {
+  background-color: grey;
+}
+
+.element-20px {
+  min-width: 20px;
+}
+
+.element-50px {
+  min-width: 50px;
+}
+
+.element-100px {
+  min-width: 100px;
+}
+
+.element-150px {
+  min-width: 150px;
+}
+
+.message-info {
+  background-color: blue;
+}
+
+.message-alert {
+  background-color: red;
+}
